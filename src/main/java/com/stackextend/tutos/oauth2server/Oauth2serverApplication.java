@@ -11,6 +11,7 @@ public class Oauth2serverApplication {
                 .run(
                 "--spring.cloud.common.security.enabled=true",
                 "--server.port=9999",
+                "--server.servlet.contextPath=/oauth2",
                 "--logging.level.org.springframework=warn",
                 "--spring.config.location=classpath:oauth2-server-config.yml"
                 );
