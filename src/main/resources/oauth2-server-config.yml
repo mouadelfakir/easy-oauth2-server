@@ -1,6 +1,11 @@
 server:
   port: ${oauth2.port}
 spring:
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_auth
+    username: root
+    password: my-secret-pw
   application:
     name: easy-oauth2-server
   jmx:
